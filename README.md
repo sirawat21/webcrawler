@@ -1,4 +1,4 @@
-# Web Crawler Project
+# Web Crawler
 
 ### Dependencis
 ```
