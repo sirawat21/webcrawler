@@ -4,12 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npm run watch",
+    "start": "npm run exec:src",
     "clear": "rm -rf ./dist",
     "complie": "babel ./src --out-dir ./dist --copy-files",
-    "build": "npm-run-all clear build",
+    "build": "npm-run-all clear complie",
     "exec:src": "babel-node ./src/app.js",
-    "test": "npx babel-node ./src/helpers/crawler.js",
     "watch": "nodemon"
   },
   "author": "",
@@ -24,7 +23,6 @@
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
     "colors": "^1.4.0",
     "nightmare": "^3.0.2"
   }
