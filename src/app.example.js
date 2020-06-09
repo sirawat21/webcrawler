@@ -1,5 +1,5 @@
 /* Example using the script */
-import { crawler } from "./helpers"
+import { crawler } from "./libs"
 
 /* Create & configuration webbots */
 const webbot_7news = new crawler([{
@@ -32,11 +32,11 @@ const webbot_9news = new crawler([{
 }])
 
 /* Execution */
-const main = async () => {
+const app = async () => {
     const stack = []
     const result7news = await webbot_7news.start()
     const result9news = await webbot_9news.start()
     console.log(result7news)
     console.log(result9news)
 }
-main()
+app()

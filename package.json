@@ -2,13 +2,13 @@
   "name": "webcrawler",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "npm run exec:src",
     "clear": "rm -rf ./dist",
     "complie": "babel ./src --out-dir ./dist --copy-files",
     "build": "npm-run-all clear complie",
-    "exec:src": "babel-node ./src/app.js",
+    "exec:src": "babel-node ./src/app.example.js",
     "watch": "nodemon"
   },
   "author": "",
