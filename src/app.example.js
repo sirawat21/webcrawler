@@ -1,4 +1,5 @@
 /* Example using the script */
+import fs from "fs"
 import { crawler } from "./libs"
 
 /* Create & configuration webbots */
@@ -34,7 +35,8 @@ const webbot_9news = new crawler([{
 /* Execution */
 const main = ( async () => {
     const rawData = []
-    /* rawData.push(await webbot_7news.start()) */
+    rawData.push(await webbot_7news.start())
     rawData.push(await webbot_9news.start())
-    console.log(JSON.stringify(rawData, null, 4))
+    /* Export raw scraping data into json file */
+    fs.writeFileSync("data.json", JSON.stringify(rawData))
 })()
