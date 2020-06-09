@@ -32,11 +32,11 @@ const webbot_9news = new crawler([{
 }])
 
 /* Execution */
-const app = async () => {
+const main = async () => {
     const stack = []
     const result7news = await webbot_7news.start()
     const result9news = await webbot_9news.start()
     console.log(result7news)
     console.log(result9news)
 }
-app()
+main()
