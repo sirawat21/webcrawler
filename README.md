@@ -17,7 +17,7 @@ npm install nightmare colors
 ---
 
 ### Usage
-**The meaning of configuration :**
+**The definition of configuration :**
 
 | Property | Description |
 | ------ | ----------- |
