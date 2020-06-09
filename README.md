@@ -1,5 +1,5 @@
 # Web Crawler
-The crawler script of this project has used a library named Nightmare for helping to crawl and scrap webpages. The Javascript codes in this project were written by ES6 syntax.
+The crawler script in this project has used a library named Nightmare for helping to crawl and scrap webpages. The Javascript codes in this project were written by ES6 syntax.
 
 ### Installation & Runing
 
@@ -25,6 +25,7 @@ npm install nightmare colors
 |name|Name bots, for indicates the status of bots in the console.|
 |limit|The limit number of URL lists which bot going to crawl. `null = no limit`|
 |selectors|Contain the CSS selectors for extract text from HTML.|
+
 **! Note** In `selectors` contain 2 properties `url` and `article`, which used to extract the link from the first page then scraping contents from the crawled page.
 
 **Example script :**
